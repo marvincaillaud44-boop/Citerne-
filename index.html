@@ -66,9 +66,11 @@ const PRODUCT_COLORS={};
 const $=id=>document.getElementById(id);
 const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
 const kg=n=>(Number(n)||0).toLocaleString('fr-FR')+' kg';
-let db=loadDb(), activeId=db.activeId||null, selectedComp=1, page='home';
-function loadDb(){try{return JSON.parse(localStorage.getItem('ma-citerne-v3'))||null}catch(e){return null}} 
-if(!db){db={tanks:[{id:'tank-default',name:'Ma semi habituelle',capacities:DEFAULT_CAPS}],loads:[],history:[],activeId:null};persist()}
+let db=loadDb();
+function loadDb(){try{return JSON.parse(localStorage.getItem('ma-citerne-v3'))||null}catch(e){return null}}
+if(!db){db={tanks:[{id:'tank-default',name:'Ma semi habituelle',capacities:DEFAULT_CAPS}],loads:[],history:[],activeId:null};}
+let activeId=db.activeId||null, selectedComp=1, page='home';
+
 function persist(){localStorage.setItem('ma-citerne-v3',JSON.stringify(db))}
 function active(){return db.loads.find(x=>x.id===activeId)||null}
 function tankForLoad(l){return l?.tankSnapshot||db.tanks.find(t=>t.id===l?.tankId)||db.tanks[0]}
