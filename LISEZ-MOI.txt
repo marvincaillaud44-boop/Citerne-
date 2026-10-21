@@ -1,0 +1,25 @@
+MA CITERNE — VERSION 3
+======================
+
+Nouveautés :
+- Plusieurs chargements nommés, enregistrés et retrouvables.
+- Semi-citerne illustrée de profil avec compartiments cliquables.
+- Plusieurs modèles de citernes configurables.
+- Nombre de compartiments réglable de 1 à 20.
+- Capacité de chaque compartiment personnalisable en kg.
+- Lots répartissables sur plusieurs compartiments.
+- Contrôles : somme des répartitions, capacité totale et interdiction de mélanger des produits différents.
+- Exportation et restauration d'une sauvegarde JSON.
+
+INSTALLATION / MISE À JOUR GITHUB PAGES
+1. Décompressez le ZIP.
+2. Dans votre dépôt GitHub Ma-citerne-, remplacez index.html, manifest.json, sw.js et les deux icônes par les fichiers de ce dossier.
+3. Validez les changements (Commit changes).
+4. Ouvrez le site GitHub Pages dans Safari et rechargez-le.
+5. Si vous utilisez l'icône ajoutée à l'écran d'accueil, fermez-la complètement puis rouvrez-la. En cas d'ancienne version persistante, supprimez l'ancienne icône de l'écran d'accueil et ajoutez de nouveau le site depuis Safari.
+
+DONNÉES
+Les données sont stockées localement dans le navigateur sur cet appareil. Utilisez « Exporter sauvegarde » pour conserver une copie avant une mise à jour ou un changement de téléphone. La restauration remplace les données présentes.
+
+IMPORTANT
+La vue de semi est un schéma de visualisation, pas un document réglementaire de chargement ni un calcul de répartition des masses par essieu. Vérifiez toujours les capacités et consignes réelles de la citerne.
